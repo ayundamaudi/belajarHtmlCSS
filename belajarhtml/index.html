@@ -1,0 +1,397 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 16px;
+            background-color: darkorange;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+            /*lebih harus saat pergantian warna hoverable*/
+        }
+
+        button:hover {
+            background-color: #8a4c00;
+        }
+
+        menu {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .button-menu-masuk {
+            padding: 10px;
+            background-color: white;
+            color: blue;
+            border: none;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+
+        .button-menu-masuk:hover {
+            background-color: rgb(217, 217, 243);
+        }
+
+        .button-menu-daftar {
+            padding: 10px;
+            background-color: rgb(18, 18, 168);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition-duration: 0.4s;
+        }
+
+        .button-menu-daftar:hover {
+            background-color: rgb(0, 0, 124);
+        }
+
+        .h2-acara {
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: -.4px;
+            color: #ff8c00;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: darkorange;
+            width: 1em;
+            margin-left: -1em;
+            display: inline-block;
+        }
+
+        .h1-silabus {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 48px;
+            color: #1c387c;
+            white-space: nowrap;
+            margin-right: 180px;
+        }
+
+        .h1-silabus-1 {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 48px;
+            color: #1c387c;
+            white-space: nowrap;
+            margin-right: 130px;
+        }
+
+        .h1-silabus-2 {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 48px;
+            color: #1c387c;
+            white-space: nowrap;
+            margin-right: 147px;
+        }
+
+        .main-silabus {
+            display: flex; 
+            flex-direction: row; 
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        /* li::before {
+            content: "•    ";
+            color: darkorange;
+        } */
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #3064c6; padding-top: 10px; padding-bottom: 80px; color: white; border-bottom-left-radius: 80px;">
+        <menu>
+            <menuitem>Dukungan</menuitem>
+            <menuitem>Kelas</menuitem>
+            <menuitem>FAQ</menuitem>
+            <menuitem>Rekrut Talent</menuitem>
+            <div>
+                <menuitem>
+                <button type="button" class="button-menu-masuk">Masuk</button>
+                </menuitem>
+                <menuitem style="margin: 10px;">
+                <button type="button" class="button-menu-daftar">Daftar</button>
+                </menuitem>
+            </div>
+        </menu>
+        <div style="display: flex; flex-direction: row; justify-content: space-around; margin: 120px;">
+            <div>
+                <h1>Fullstack Mobile Developer</h1>
+                <div style="display: flex; flex-direction: row;">
+                    <ul>
+                        <li>Algoritma</li>
+                        <li>JavaAcript</li>
+                        <li>Express.js</li>
+                        <li>Redux</li>
+                        <li>SCRUM</li>
+                    </ul>
+                    <ul>
+                        <li>Responsive Website</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Real Time Application</li>
+                    </ul>
+                </div>
+                <button type="button">Daftar Sekarang</button>
+            </div>
+            <div>
+                <img src="https://assets-arkademy-wesbsite.s3-ap-southeast-1.amazonaws.com/Hero/faztrack-hero-img.jpg"
+                    alt="" style="border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; justify-content: space-around; margin: 100px;">
+        <div>
+            <img src="fotoarka.png" alt="">
+        </div>
+        <div style="margin: 50px; padding-top: 100px;">
+            <div>
+                <h2>Mengerjakan projek bersama dengan teman satu tim</h2>
+            </div>
+            <div>
+                <p>
+                    Bangun projek kalian besama rekan satu tim untuk meningkatkan kerja sama dan kolaborasi antar
+                    individu.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <h2>Fullstack Mobile Developer</h2>
+    </div>
+
+    <div class="main-silabus">
+        <p>Berikut ini adalah timeline pembelajaran yang akan diterima setiap minggu dalam kelas :</p>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus-1">1-2</h1>
+        </div>
+        <div>
+            <h2 class="h2-acara">Algoritma, Flowchart dan Dasar JavaScript</h2>
+            <div>
+                <p>Pada dua minggu pertama, kalian akan mempelajari dasar programming seperti Algoritma dan
+                    Flowchart, lalu dilanjutkan dengan materi JavaScript, seperti ES6, Asynchronous JavaScript dan
+                    lain-lain.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">3</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Responsive Website</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan mempelajari bagaimana membangun website yang responsive dengan HTML, CSS, dan
+                        Bootstrap
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">4</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Beginner Backend with Node.js & Express.js</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Selanjutnya, kalian akan membangun sebuah RESTful HTTP API dengan menggunakan Node.js dan
+                        Express.js, serta menggunakan database MySQL.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">5</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Beginner Frontend with React</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Minggu ini kalian akan mempelajari Fundamental React.js, untuk membangun aplikasi web Frontend
+                        modern
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">6</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Intermediate Backend</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan belajar membuat autentikasi dengan JWT, melakukan paginasi dan upload file berbasis
+                        RESTful HTTP API.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">7</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Intermediate Frontend</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Minggu ini kalian akan mempelajari State Management Frontend dengan Redux
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">8</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Team Project 1</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan bekerja dalam tim dan membangun produk website dengan menerapkan framework SCRUM.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus">9</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Beginner Mobile Development with React Native</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Selanjutnya, kalian akan masuk ke development mobile dengan React Native yang dapat dibuild
+                        menjadi aplikasi Android dan iOS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus-2">10</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Intermediate Mobile Development</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan lebih dalam mempelajari React Native dan menerapkan Push Notification
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus-2">11</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Real Time Application</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan membangun aplikasi mobile berisi fitur Chat dan Map yang Realtime dengan
+                        memanfaatkan Socket.io.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-silabus">
+        <div>
+            <h1 class="h1-silabus-2">12</h1>
+        </div>
+        <div>
+            <div>
+                <h2 class="h2-acara">Team Project 2 (Final Project)</h2>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Kalian akan bekerja dalam tim, diberi tantangan untuk membuat aplikasi baru dengan ide bisnis di
+                        dalamnya, dan juga dengan menerapkan semua yang telah dipelajari
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center>
+        <div style="background-color: rgb(255, 210, 210); padding: 50px;">
+            <hr color="darkblue" size="5px" width="40px">
+            <h2>Siap Ubah Masa Depanmu ?</h2>
+            <button type="button">Daftar Sekarang</button>
+        </div>
+    </center>
+</body>
+
+</html>
