@@ -1,0 +1,215 @@
+button {
+    padding: 16px;
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    /*lebih harus saat pergantian warna hoverable*/
+}
+
+button:hover {
+    background-color: #8a4c00;
+}
+
+menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.button-menu-masuk {
+    padding: 10px;
+    background-color: white;
+    color: blue;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.button-menu-masuk:hover {
+    background-color: rgb(217, 217, 243);
+}
+
+.button-menu-daftar {
+    padding: 10px;
+    background-color: rgb(18, 18, 168);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.button-menu-daftar:hover {
+    background-color: rgb(0, 0, 124);
+}
+
+.h2-acara {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -.4px;
+    color: #ff8c00;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: darkorange;
+    width: 1em;
+    margin-left: -1em;
+    display: inline-block;
+}
+
+.h1-silabus {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 48px;
+    color: #1c387c;
+    white-space: nowrap;
+    margin-right: 180px;
+}
+
+.h1-silabus-1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 48px;
+    color: #1c387c;
+    white-space: nowrap;
+    margin-right: 130px;
+}
+
+.h1-silabus-2 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 48px;
+    color: #1c387c;
+    white-space: nowrap;
+    margin-right: 155px;
+}
+
+.h1-silabus-11 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 48px;
+    color: #1c387c;
+    white-space: nowrap;
+    margin-right: 163px;
+
+}
+
+.main-silabus {
+    display: flex;
+    flex-direction: row;
+}
+
+.silabus{
+    display: flex;
+    flex-direction: row;
+}
+.silabus h1{
+    width: 30%;
+    color: darkblue;
+}
+.silabus div{
+    width: 100%;
+}
+.silabus div h2{
+    font-size: 26px;
+    color: darkorange;
+}
+.silabus div p{
+    font-size: 20px;
+}
+
+.header-menu {
+    background-color: #3064c6; 
+    padding-top: 10px; 
+    padding-bottom: 80px; 
+    color: white; 
+    border-bottom-left-radius: 80px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .image {
+        display: none;
+        
+    }
+    .header {
+        display: none;
+        border-radius: 0px;
+    }
+
+    .h2-team {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .silabus{
+        flex-direction: column;
+        text-align: center;
+    }
+    .silabus h1{
+        width: 100%;
+    }
+    #rata-tengah {
+        text-align: center;
+    }
+    .header-menu {
+        border-bottom-left-radius: 0px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .h2-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .h2-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .h2-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .h2-team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
